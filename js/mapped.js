@@ -26,18 +26,18 @@ function letsBounce(marker){
       var t = setTimeout(function() {
         letsBounce(marker)},10);
     }
-};
+}
 
 function markerHighlight(marker){
   var theZoom = map.getZoom();
     if (theZoom < 5) {
             map.setZoom(5);
 
-    };
+    }
       map.setCenter(marker.getPosition());
       letsBounce(marker);
       showInfo(marker);
-};
+}
 
 function drawTheLines(color, startPin, endPin) {
   var line = new google.maps.Polyline({
@@ -56,11 +56,11 @@ function drawTheLines(color, startPin, endPin) {
   });
  
   line.setMap(map);
-};
+}
 
 function add_markers_for_map(story) {
   load_markers(story.map, story.pin_color);
-};
+}
 
 
 
@@ -126,7 +126,7 @@ function make_marker(location, image, array) {
 
 
   google.maps.event.addListener(marker, 'click', function() {
-    theZoom = map.getZoom()
+    var theZoom = map.getZoom();
     if (theZoom < 5) {
             map.setZoom(5);
 
@@ -170,11 +170,11 @@ var el = $(elem);
   paragraph_to_hide.slideUp();
   paragraph_to_show.slideDown();
   selected_chapter = elem;
-  };
+  }
   
 
-};
-};
+}
+}
 
 function toggleMarkers(lat, lon, array, zoom){
   
@@ -280,7 +280,7 @@ var copper_mountain = {
     "title":"Copper Mountain mine",
     "latitude":49.280146,
     "longitude":239.501338,
-    "image":"http://www.patsyann.com/chris/tyee/machines.jpg",
+    "image":"img/machines.jpg",
     "read_more":"http://www.cumtn.com/s/index.php",
     "description":"The Copper Road starts at Copper Mountain, south of Princeton, B.C., where the red metal has been extracted for almost a century. (Photo courtesy Copper Mountain Mining Corp.)"
 };
@@ -290,7 +290,7 @@ var mining_district =
     "title":"Vancouver mining district",
     "latitude":49.283756,
     "longitude":236.885969,
-    "image":"http://www.patsyann.com/chris/tyee/googlestreet.jpg",
+    "image":"img/googlestreet.jpg",
     "read_more":"http://www.vancouvereconomic.com/page/mining",
     "description":"The Copper Road’s next stop runs through Vancouver, whose financial specialists are global leaders at raising venture capital to develop mineral claims into working mines. (Image: Google Earth streetview)"
   };
@@ -330,7 +330,7 @@ var naoshima_island = {
     "title":"Naoshima Island",
     "latitude":34.472653,
     "longitude":133.970267,
-    "image":"http://patsyann.com/chris/tyee/NaoshimaSmelter.jpg",
+    "image":"img/NaoshimaSmelter.jpg",
     "read_more":"http://en.wikipedia.org/wiki/Naoshima,_Kagawa",
     "description":"An open-air art exhibit shares Naoshima Island with Mitsubushi Materials Corporation's multi-stage copper smelter. (Photo courtesy Mitsubishi Materials Corp.)"
   };
@@ -367,7 +367,7 @@ var naoshima_island = {
     "title":"Kunshan",
     "latitude":31.373875,
     "longitude":120.984244,
-    "image":"http://patsyann.com/chris/tyee/Kunshan.jpg",
+    "image":"img/Kunshan.jpg",
     "read_more":"http://en.ks.gov.cn/",
     "description":"Half the world's laptop computers came from Kunshan, China, in 2009. It's also where copper from B.C. is further processed into components vital to the operation of electronics like Apple's iPhone. (Photo Christopher Pollon) "
   };
@@ -404,7 +404,7 @@ var naoshima_island = {
     "title":"A.B.C. Recycling, Fort St. John BC",
     "latitude":56.208739,
     "longitude":239.194358,
-    "image":"http://www.patsyann.com/chris/tyee/CopperCoil.jpg",
+    "image":"img/CopperCoil.jpg",
     "read_more":"http://www.abcrecycling.com/",
     "description":"Back on this side of the Pacific, Christopher Pollon tracked what becomes of manufactured copper when its useful life is over. In B.C.'s Peace country, gas fields are generating plenty of scrap metal. Consolidated at A.B.C. Recycling, used copper competes head-to-head with virgin  ore from mines like Alaska’s planned giant Pebble Mine. (Photo Giovanni Dall'Orto, Wikimedia Commons)"
   };
@@ -422,7 +422,7 @@ var naoshima_island = {
     "title":"Sims Recycling, Langley, BC",
     "latitude":49.103764,
     "longitude":237.518061,
-    "image":"http://patsyann.com/chris/tyee/oldphones.jpg",
+    "image":"img/oldphones.jpg",
     "read_more":"http://us.simsrecycling.com/Locations/Vancouver-BC",
     "description":"The last stop on the Copper Road is Langley, where cells phones collect for recycling at Sims Canada. Along with copper, they contain more than a score of rare metals, from antimony to zirconium. (Photo Christopher Pollon)"
      };
@@ -481,21 +481,21 @@ chapter_select("#intro");
 
 $('#intro h1').click(function(){
     chapter_select('#intro');
-    toggleMarkers(38.80128906584996, -185.05316809999997, null, 2);
+    toggleMarkers(38.80128906584996, -185.05316809999997, null, 2)
     $("#info-panel").fadeOut();
 
 });
 
 $("#chapter-one h1").click(function() {
   if (selected_chapter != "#chapter-one"){
-    toggleMarkers(49.237485792789585, -120.02220664843756, marker_collection_1, 7);
+    toggleMarkers(49.237485792789585, -120.02220664843756, marker_collection_1, 7)
   }
   chapter_select('#chapter-one');
 });
 
 $("#chapter-two h1").click(function() {
     if (selected_chapter != "#chapter-two"){
-        toggleMarkers(53.68516233464379, -120.62072159375006, marker_collection_2, 5);
+        toggleMarkers(53.68516233464379, -120.62072159375006, marker_collection_2, 5)
       }
     chapter_select("#chapter-two");
 });
@@ -504,7 +504,7 @@ $("#chapter-three h1").click(function() {
 
 
       if (selected_chapter != '#chapter-three'){
-	toggleMarkers(33.781484237781044, -223.39301225, marker_collection_3, 6);
+	toggleMarkers(33.781484237781044, -223.39301225, marker_collection_3, 6)
 }
   chapter_select('#chapter-three');
 
@@ -512,7 +512,8 @@ $("#chapter-three h1").click(function() {
 });
 $("#chapter-four h1").click(function() {
       if (selected_chapter != '#chapter-four'){
-	toggleMarkers(28.36392284994009, -240.04152268749996, marker_collection_4, 4)};
+	toggleMarkers(28.36392284994009, -240.04152268749996, marker_collection_4, 4)
+      }
     chapter_select('#chapter-four');
 
 
@@ -520,14 +521,16 @@ $("#chapter-four h1").click(function() {
 
 $("#chapter-five h1").click(function() {
       if (selected_chapter != '#chapter-five'){
-	toggleMarkers(56.208738999999966, -120.805642, marker_collection_5, 3)};
+	toggleMarkers(56.208738999999966, -120.805642, marker_collection_5, 3)
+    }
   chapter_select('#chapter-five');
 
 });
 
 $("#chapter-six h1").click(function() {
       if (selected_chapter != '#chapter-six'){
-	toggleMarkers(49.0794828622533, -122.37207571875, marker_collection_6, 9)};
+	     toggleMarkers(49.0794828622533, -122.37207571875, marker_collection_6, 9)
+        }
   chapter_select('#chapter-six');
 
 });
@@ -548,42 +551,6 @@ add_markers(marker_collection_6);
 
 
 
-// $('#first_set').change(toggletheMarkers('#first_set', marker_collection_1));
-// $('#second_set').change(toggletheMarkers('#second_set', marker_collection_2));
-// function toggletheMarkers(elem, array, zoom){	
-// 	elem = $(elem);
-// 	if (elem.is(":checked")) {
-// 		elem.attr('checked', true);
-// 			remove_markers(array)
-
-// 	}
-	
-// 	else {
-// 			elem.attr('checked', true);
-// 			add_markers(array);
-// 	};
-
-// }
-
-
-// function toggleBounce() {
-// 	var new_marker = this;
-// 	var prev_marker = new_marker;
-
-//   if(prev_marker) {
-//   if (prev_marker.getAnimation() != null) {             
-//       prev_marker.setAnimation(null);                               
-//       new_marker.setAnimation(google.maps.Animation.BOUNCE);
-//       prev_marker = new_marker;
-//   }
-// } else {
-//   new_marker.setAnimation(google.maps.Animation.BOUNCE);
-//   prev_marker = new_marker;
-// }
-// };
-// 	google.maps.event.addListener(marker, 'click', toggleBounce);
-
-
 
 
 function showInfo(marker) {
@@ -596,19 +563,19 @@ function showInfo(marker) {
 		$("#info-panel").fadeIn();
 		elem.fadeIn();
 		});
-	};
+	}
 
 
 function pin_content(marker) {
-	var heading = marker.title;
-	var body = marker.description;
-	var read_more = marker.read_more;
-	var image = marker.img;
-	var html = [];
+	var heading = marker.title,
+	    body = marker.description,
+	    read_more = marker.read_more,
+	    image = marker.img,
+	    html = [];
 
 	if (heading.length > 0 ) {
 		html.push("<h1>"+heading+"</h1>");
-	};
+	}
 
 	if (image.length > 0) {
 		html.push("<img src='"+image+"' />");
@@ -655,12 +622,11 @@ function related_pins(current_marker) {
 
 // }
 
-};
+}
 
 function make_a_list(array){
-showInfo(array[0]);
-
-};
+                  showInfo(array[0]);
+                  }
 
 
 
@@ -668,16 +634,16 @@ function load_markers(array, pin_color, save_array) {
 	for (index = 0; index < array.length; ++index) {
 
 	 image = { path: google.maps.SymbolPath.CIRCLE,
-	 strokeColor: "#dedede",
-      strokeOpacity: 1,
-      strokeWeight: 3,
-      fillColor: pin_color,
-      fillOpacity: 0.95,
-      scale: 15
-  }
+	           strokeColor: "#dedede",
+              strokeOpacity: 1,
+              strokeWeight: 3,
+              fillColor: pin_color,
+              fillOpacity: 0.95,
+              scale: 15
+  };
 		make_marker(array[index], image, save_array);
-	};
-};
+	}
+}
 
 function transform_to_pin(pin, pin_color) {
 	image = { path: google.maps.SymbolPath.CIRCLE,
@@ -687,16 +653,16 @@ function transform_to_pin(pin, pin_color) {
       fillColor: pin_color,
       fillOpacity: 0.75,
       scale: 12
-  }
+  };
 		make_marker(pin, image);
-	};
+	}
 
 function getHandler(li, marker) {
     return $(li).on('click', li, function(){
 		map.setZoom(5);
 		letsBounce(marker);
-    	map.setCenter(marker.getPosition());
-    	showInfo(marker);
+    map.setCenter(marker.getPosition());
+    showInfo(marker);
 		})
 }
 
