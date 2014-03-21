@@ -4,7 +4,14 @@
 var map, 
     selected_chapter,
     paragraph_to_show,
-    paragraph_to_hide;
+    paragraph_to_hide,
+    ch1url = "http://thetyee.ca",
+    ch2url = "http://thetyee.ca",
+    ch3url = "http://thetyee.ca",
+    ch4url = "http://thetyee.ca",
+    ch5url = "http://thetyee.ca",
+    ch6url = "http://thetyee.ca";
+
 
 
 
@@ -281,8 +288,8 @@ var copper_mountain = {
     "latitude":49.280146,
     "longitude":239.501338,
     "image":"img/machines.jpg",
-    "read_more":"http://www.cumtn.com/s/index.php",
-    "description":"The Copper Road starts at Copper Mountain, south of Princeton, B.C., where the red metal has been extracted for almost a century. (Photo courtesy Copper Mountain Mining Corp.)"
+    "read_more":ch1url,
+   "description":'"Dust and smoke rise, as explosives shatter seams of rock into moveable chunks 350 metres below me. Bungalow-sized Komatsu trucks (the tires alone cost $40,000 each) wind downward around the terraced edges of the pit toward North America\'s biggest hydraulic shovel..."'
 };
 var mining_district = 
       {
@@ -290,8 +297,8 @@ var mining_district =
     "title":"Vancouver mining district",
     "latitude":49.283756,
     "longitude":236.885969,
-    "image":"img/googlestreet.jpg",
-    "read_more":"http://www.vancouvereconomic.com/page/mining",
+    "image":"img/Googlestreet.jpg",
+    "read_more":ch2url,
     "description":"The Copper Road’s next stop runs through Vancouver, whose financial specialists are global leaders at raising venture capital to develop mineral claims into working mines. (Image: Google Earth streetview)"
   };
   var schaft_creek = {
@@ -331,8 +338,9 @@ var naoshima_island = {
     "latitude":34.472653,
     "longitude":133.970267,
     "image":"img/NaoshimaSmelter.jpg",
-    "read_more":"http://en.wikipedia.org/wiki/Naoshima,_Kagawa",
-    "description":"An open-air art exhibit shares Naoshima Island with Mitsubushi Materials Corporation's multi-stage copper smelter. (Photo courtesy Mitsubishi Materials Corp.)"
+    "read_more":ch3url,
+    "description":"In a surreal twist that is uniquely Japanese, Naoshima is not only a smelter but also a world famous fine art gallery 'park,' covering most of the island's 17 square kilometres."
+
   };
   var hishikari_mine = {
     "map_id":3,
@@ -340,8 +348,8 @@ var naoshima_island = {
     "latitude":31.786419,
     "longitude":130.665814,
     "image":"",
-    "read_more":"http://www.smm.co.jp/E/business/resource/domestic/hishikari/kyoten.html",
-    "description":""
+    "read_more":ch3url,
+    "description":"Only one of Japan’s own metal mines is still commercially active, here at Hishikari."
   };
   
   var osaka = {
@@ -350,8 +358,8 @@ var naoshima_island = {
     "latitude":34.699669,
     "longitude":135.508839,
     "image":"img/bullet.jpg",
-    "read_more":"",
-    "description":"After landing from Canada in Osaka, Christopher Pollon grabbed a bullet-train to Okayama on the Seto Sea, there to catch a ferry for Naoshima Island. (Photo Christopher Pollon)"
+    "read_more":ch3url,
+    "description":"Landing in Osaka, Pollon took a bullet train and private ferry to Naoshima Island, where the raw concentrate from Copper Mountain is refined into pure copper."
   };
   var toyko = {
     "map_id":3,
@@ -368,7 +376,7 @@ var naoshima_island = {
     "latitude":31.373875,
     "longitude":120.984244,
     "image":"img/Kunshan.jpg",
-    "read_more":"http://en.ks.gov.cn/",
+    "read_more":ch4url,
     "description":"Half the world's laptop computers came from Kunshan, China, in 2009. It's also where copper from B.C. is further processed into components vital to the operation of electronics like Apple's iPhone. (Photo Christopher Pollon) "
   };
   var yunnan = {
@@ -377,7 +385,7 @@ var naoshima_island = {
     "latitude":25.036756,
     "longitude":102.711333,
     "image":"",
-    "read_more":"",
+    "read_more":ch4url,
     "description":""
   };
   var chengu = {
@@ -386,7 +394,7 @@ var naoshima_island = {
     "latitude":30.5645,
     "longitude":104.069261,
     "image":"",
-    "read_more":"",
+    "read_more":ch4url,
     "description":""
   };
 
@@ -396,7 +404,7 @@ var naoshima_island = {
     "latitude":29.559194,
     "longitude":106.551681,
     "image":"",
-    "read_more":"",
+    "read_more":ch4url,
     "description":""
   };
   var abc_recycling = {
@@ -405,7 +413,7 @@ var naoshima_island = {
     "latitude":56.208739,
     "longitude":239.194358,
     "image":"img/CopperCoil.jpg",
-    "read_more":"http://www.abcrecycling.com/",
+    "read_more":ch5url,
     "description":"Back on this side of the Pacific, Christopher Pollon tracked what becomes of manufactured copper when its useful life is over. In B.C.'s Peace country, gas fields are generating plenty of scrap metal. Consolidated at A.B.C. Recycling, used copper competes head-to-head with virgin  ore from mines like Alaska’s planned giant Pebble Mine. (Photo Giovanni Dall'Orto, Wikimedia Commons)"
   };
   var pebble_mine =  {
@@ -414,7 +422,7 @@ var naoshima_island = {
     "latitude":59.829964,
     "longitude":204.900261,
     "image":"",
-    "read_more":"http://www.pebblepartnership.com",
+    "read_more":ch5url,
     "description":""
   };
   var sims_recycling =   {
@@ -423,7 +431,7 @@ var naoshima_island = {
     "latitude":49.103764,
     "longitude":237.518061,
     "image":"img/oldphones.jpg",
-    "read_more":"http://us.simsrecycling.com/Locations/Vancouver-BC",
+    "read_more":ch6url,
     "description":"The last stop on the Copper Road is Langley, where cells phones collect for recycling at Sims Canada. Along with copper, they contain more than a score of rare metals, from antimony to zirconium. (Photo Christopher Pollon)"
      };
 
@@ -586,7 +594,7 @@ function pin_content(marker) {
 	}
 
 	if (read_more.length > 0) {
-		html.push("<a href='"+read_more+"'>Read More</a>");
+		html.push("<a href='"+read_more+"'>Full story...</a>");
 
 	}
 
