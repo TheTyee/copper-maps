@@ -2,10 +2,11 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
 body {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: "Lucida Grande", Verdana, sans-serif;
 }
 #the-map {
 	position: relative;
+	font-size: 13px;
 }
 
 #map-canvas {
