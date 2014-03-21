@@ -297,8 +297,12 @@ var mining_district =
     "title":"Vancouver mining district",
     "latitude":49.283756,
     "longitude":236.885969,
-    "image":"img/googlestreet.jpg",
+<<<<<<< HEAD
+    "image":"img/Googlestreet.jpg",
     "read_more":ch2url,
+=======
+    
+>>>>>>> 0755a44376a4efdb3990a07e30acde330a6f0961
     "description":"The Copper Road’s next stop runs through Vancouver, whose financial specialists are global leaders at raising venture capital to develop mineral claims into working mines. (Image: Google Earth streetview)"
   };
   var schaft_creek = {
