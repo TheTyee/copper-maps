@@ -592,7 +592,7 @@ function pin_content(marker) {
 	}
 
 	if (read_more.length > 0) {
-		html.push("<a href='"+read_more+" target='_parent'>Full story...</a>");
+		html.push("<a href='"+read_more+"' target='_parent'>Full story...</a>");
 
 	}
 
