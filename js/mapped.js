@@ -1,16 +1,14 @@
-/*jslint browser: true*/
-/*global $, google, jQuery, alert*/
 
 var map, 
     selected_chapter,
     paragraph_to_show,
     paragraph_to_hide,
-    ch1url = "http://thetyee.ca",
-    ch2url = "http://thetyee.ca",
-    ch3url = "http://thetyee.ca",
-    ch4url = "http://thetyee.ca",
-    ch5url = "http://thetyee.ca",
-    ch6url = "http://thetyee.ca";
+    ch1url = "http://thetyee.ca/News/2014/03/24/Copper-Mountain-Resurrected/",
+    ch2url = "http://thetyee.ca/News/2014/03/25/Copper-Casino-Bet/",
+    ch3url = "http://thetyee.ca/News/2014/03/26/Copper-Meets-Fire/",
+    ch4url = "http://thetyee.ca/News/2014/03/27/BC-Copper-Asian-Cell-Phones/",
+    ch5url = "http://thetyee.ca/News/2014/03/27/Peak-Copper/",
+    ch6url = "http://thetyee.ca/News/2014/03/28/Copper-Disconnect/";
 
 
 
@@ -594,7 +592,7 @@ function pin_content(marker) {
 	}
 
 	if (read_more.length > 0) {
-		html.push("<a href='"+read_more+"'>Full story...</a>");
+		html.push("<a href='"+read_more+" target='_parent'>Full story...</a>");
 
 	}
 
