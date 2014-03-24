@@ -407,12 +407,12 @@ var naoshima_island = {
   };
   var abc_recycling = {
     "map_id":5,
-    "title":"A.B.C. Recycling, Fort St. John BC",
+    "title":"ABC Recycling, Fort St. John BC",
     "latitude":56.208739,
     "longitude":239.194358,
     "image":"img/CopperCoil.jpg",
     "read_more":ch5url,
-    "description":"Back on this side of the Pacific, Christopher Pollon tracked what becomes of manufactured copper when its useful life is over. In B.C.'s Peace country, gas fields are generating plenty of scrap metal. Consolidated at A.B.C. Recycling, used copper competes head-to-head with virgin  ore from mines like Alaska’s planned giant Pebble Mine. (Photo Giovanni Dall'Orto, Wikimedia Commons)"
+    "description":"Back on this side of the Pacific, Christopher Pollon tracked what becomes of manufactured copper when its useful life is over. In B.C.'s Peace country, gas fields are generating plenty of scrap metal. Consolidated at ABC Recycling, used copper competes head-to-head with virgin  ore from mines like Alaska’s planned giant Pebble Mine. (Photo Giovanni Dall'Orto, Wikimedia Commons)"
   };
   var pebble_mine =  {
     "map_id":5,
