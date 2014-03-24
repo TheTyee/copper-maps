@@ -3,12 +3,12 @@ var map,
     selected_chapter,
     paragraph_to_show,
     paragraph_to_hide,
-    ch1url = "http://thetyee.ca/News/2014/03/24/Copper-Mountain-Resurrected/",
-    ch2url = "http://thetyee.ca/News/2014/03/25/Copper-Casino-Bet/",
-    ch3url = "http://thetyee.ca/News/2014/03/26/Copper-Meets-Fire/",
-    ch4url = "http://thetyee.ca/News/2014/03/27/BC-Copper-Asian-Cell-Phones/",
-    ch5url = "http://thetyee.ca/News/2014/03/27/Peak-Copper/",
-    ch6url = "http://thetyee.ca/News/2014/03/28/Copper-Disconnect/";
+    ch1url = "http://thetyee.ca/News/2014/03/24/Copper-Mountain-Resurrected/?utm_campaign=map",
+    ch2url = "http://thetyee.ca/News/2014/03/25/Copper-Casino-Bet/?utm_campaign=map",
+    ch3url = "http://thetyee.ca/News/2014/03/26/Copper-Meets-Fire/?utm_campaign=map",
+    ch4url = "http://thetyee.ca/News/2014/03/27/BC-Copper-Asian-Cell-Phones/?utm_campaign=map",
+    ch5url = "http://thetyee.ca/News/2014/03/27/Peak-Copper/?utm_campaign=map",
+    ch6url = "http://thetyee.ca/News/2014/03/28/Copper-Disconnect/?utm_campaign=map";
 
 
 
