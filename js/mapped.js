@@ -347,7 +347,7 @@ var naoshima_island = {
     "longitude":130.665814,
     "image":"",
     "read_more":ch3url,
-    "description":"Only one of Japan’s own metal mines is still commercially active, here at Hishikari."
+    "description":"After China, Japan smelts more copper than anywhere else on the planet (about 10 per cent of the global total). How has a country with only one commercially active mine left (Hishikari, featured here) become one of the world's most important centres for smelting and refining the pure metal out of copper ore from mines around the globe?"
   };
   
   var osaka = {
@@ -370,13 +370,15 @@ var naoshima_island = {
   };
   var kunshan_china = {
     "map_id":4,
-    "title":"Kunshan",
+    "title":"Kunshan, China",
     "latitude":31.373875,
     "longitude":120.984244,
     "image":"img/Kunshan.jpg",
     "read_more":ch4url,
-    "description":"Half the world's laptop computers came from Kunshan, China, in 2009. It's also where copper from B.C. is further processed into components vital to the operation of electronics like Apple's iPhone. (Photo Christopher Pollon) "
-  };
+    "description":"Kunshan, just outside of Shanghai, is China's Silicon Valley. It's here where companies like Apple have factories like Foxconn that bake B.C. copper into electronics like the computer you're reading this story on. Or into the phone in your pocket. But in capitalism's head-first race to the bottom, even Kunshan is feeling the pinch from even lower-cost manufacturing.</p><p>
+
+Kunshan is just outside Shanghai. In 2009, half the world's laptop computers came from here. But even Kunshan is feeling the pinch. (Photo Christopher Pollon)"
+}
   var yunnan = {
     "map_id":4,
     "title":"Yunnan",
@@ -384,7 +386,7 @@ var naoshima_island = {
     "longitude":102.711333,
     "image":"",
     "read_more":ch4url,
-    "description":""
+    "description":"Where's the lowest-cost manufacturing? Not in Kunshan. Not any more. It's in places like Chengdu, Chongqing, and Yunnan. It's a combination of government stimulus, power and water scarcity, and the triple temptation of lower taxes, smaller wages and weaker environmental standards that combine to pull China's electronics production is being drawn westward."
   };
   var chengu = {
     "map_id":4,
@@ -393,7 +395,7 @@ var naoshima_island = {
     "longitude":104.069261,
     "image":"",
     "read_more":ch4url,
-    "description":""
+    "description":"Where's the lowest-cost manufacturing? Not in Kunshan. Not any more. It's in places like Chengdu, Chongqing, and Yunnan. It's a combination of government stimulus, power and water scarcity, and the triple temptation of lower taxes, smaller wages and weaker environmental standards that combine to pull China's electronics production is being drawn westward."
   };
 
   var chongqing ={
@@ -403,7 +405,7 @@ var naoshima_island = {
     "longitude":106.551681,
     "image":"",
     "read_more":ch4url,
-    "description":""
+    "description":"Where's the lowest-cost manufacturing? Not in Kunshan. Not any more. It's in places like Chengdu, Chongqing, and Yunnan. It's a combination of government stimulus, power and water scarcity, and the triple temptation of lower taxes, smaller wages and weaker environmental standards that combine to pull China's electronics production is being drawn westward."
   };
   var abc_recycling = {
     "map_id":5,
@@ -421,7 +423,7 @@ var naoshima_island = {
     "longitude":204.900261,
     "image":"",
     "read_more":ch5url,
-    "description":""
+    "description":"Like oil, most high grade, easy-to-access ore bodies have already been tapped, meaning that miners will increasingly need to go to ever more remote, costlier, and difficult locations, exposing and crushing more rock from vaster pits, all to extract ever lower grades of ore. Proposals to develop the Pebble mine in Alaska, or KSM in northern B.C. -- both huge, very low-grade copper deposits posing immense risks to the world's best salmon waters -- could only have emerged in this era of \"tough ore\""
   };
   var sims_recycling =   {
     "map_id":6,
@@ -430,8 +432,8 @@ var naoshima_island = {
     "longitude":237.518061,
     "image":"img/oldphones.jpg",
     "read_more":ch6url,
-    "description":"The last stop on the Copper Road is Langley, where cells phones collect for recycling at Sims Canada. Along with copper, they contain more than a score of rare metals, from antimony to zirconium. (Photo Christopher Pollon)"
-     };
+    "description":"In spite of the many finite resources in your phone, it is marketed as disposable. UN researchers predict by 2017 the total annual volume of used electronics will weigh as much as 200 Empire State Buildings. At the current rate, less than half will be in a bin like this at <a href=\"http://us.simsrecycling.com/Locations/Vancouver-BC\">Sims Recycling</a> in Langley, B.C. (Photo Christopher Pollon) "  
+  };
 
 
 
