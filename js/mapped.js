@@ -421,7 +421,7 @@ var naoshima_island = {
     "longitude":204.900261,
     "image":"",
     "read_more":ch5url,
-    "description":"Like oil, most high grade, easy-to-access ore bodies have already been tapped, meaning that miners will increasingly need to go to ever more remote, costlier, and difficult locations, exposing and crushing more rock from vaster pits, all to extract ever lower grades of ore. Proposals to develop the Pebble mine in Alaska, or KSM in northern B.C. -- both huge, very low-grade copper deposits posing immense risks to the world's best salmon waters -- could only have emerged in this era of \"tough ore\""
+    "description":"Like oil, most high grade, easy-to-access ore bodies have already been tapped, meaning that miners will increasingly need to go to ever more remote, costlier, and difficult locations, exposing and crushing more rock from vaster pits, all to extract ever lower grades of ore. Proposals to develop the Pebble mine in Alaska, or KSM in northern B.C. — both huge, very low-grade copper deposits posing immense risks to the world's best salmon waters — could only have emerged in this era of \"tough ore\""
   };
   var sims_recycling =   {
     "map_id":6,
@@ -430,7 +430,7 @@ var naoshima_island = {
     "longitude":237.518061,
     "image":"img/oldphones.jpg",
     "read_more":ch6url,
-    "description":"In spite of the many finite resources in your phone, it is marketed as disposable. UN researchers predict by 2017 the total annual volume of used electronics will weigh as much as 200 Empire State Buildings. At the current rate, less than half will be in a bin like this at <a href=\"http://us.simsrecycling.com/Locations/Vancouver-BC\">Sims Recycling</a> in Langley, B.C. (Photo Christopher Pollon) "  
+    "description":"In spite of the many finite resources in your phone, it is marketed as disposable. UN researchers predict by 2017 the total annual volume of used electronics will weigh as much as 200 Empire State Buildings. At the current rate, less than half will be in a bin like this at <a href=\"http://us.simsrecycling.com/Locations/Vancouver-BC\" target=\"_parent\">Sims Recycling</a> in Langley, B.C. (Photo Christopher Pollon) "  
   };
 
 
