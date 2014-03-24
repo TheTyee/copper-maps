@@ -375,9 +375,7 @@ var naoshima_island = {
     "longitude":120.984244,
     "image":"img/Kunshan.jpg",
     "read_more":ch4url,
-    "description":"Kunshan, just outside of Shanghai, is China's Silicon Valley. It's here where companies like Apple have factories like Foxconn that bake B.C. copper into electronics like the computer you're reading this story on. Or into the phone in your pocket. But in capitalism's head-first race to the bottom, even Kunshan is feeling the pinch from even lower-cost manufacturing.</p><p>
-
-Kunshan is just outside Shanghai. In 2009, half the world's laptop computers came from here. But even Kunshan is feeling the pinch. (Photo Christopher Pollon)"
+    "description":"Kunshan, just outside of Shanghai, is China's Silicon Valley. It's here where companies like Apple have factories like Foxconn that bake B.C. copper into electronics like the computer you're reading this story on. Or into the phone in your pocket. But in capitalism's head-first race to the bottom, even Kunshan is feeling the pinch from even lower-cost manufacturing.</p><p>Kunshan is just outside Shanghai. In 2009, half the world's laptop computers came from here. But even Kunshan is feeling the pinch. (Photo Christopher Pollon)"
 }
   var yunnan = {
     "map_id":4,
