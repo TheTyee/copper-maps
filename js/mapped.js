@@ -588,7 +588,7 @@ function pin_content(marker) {
 	}
 
 	if (body.length > 0) {
-		html.push("<div class='marker_info'>"+body+"</div>");
+		html.push("<div class='marker_info'><p>"+body+"</p></div>");
 	}
 
 	if (read_more.length > 0) {
