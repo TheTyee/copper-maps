@@ -384,7 +384,7 @@ var naoshima_island = {
     "longitude":102.711333,
     "image":"",
     "read_more":ch4url,
-    "description":"Where's the lowest-cost manufacturing? Not in Kunshan. Not any more. It's in places like Chengdu, Chongqing, and Yunnan. It's a combination of government stimulus, power and water scarcity, and the triple temptation of lower taxes, smaller wages and weaker environmental standards that combine to pull China's electronics production is being drawn westward."
+    "description":"Where's the lowest-cost manufacturing? Not in Kunshan. Not any more. It's in places like Chengdu, Chongqing, and Yunnan. It's a combination of government stimulus, power and water scarcity, and the triple temptation of lower taxes, smaller wages and weaker environmental standards that combine to pull China's electronics production westward."
   };
   var chengu = {
     "map_id":4,
@@ -393,7 +393,7 @@ var naoshima_island = {
     "longitude":104.069261,
     "image":"",
     "read_more":ch4url,
-    "description":"Where's the lowest-cost manufacturing? Not in Kunshan. Not any more. It's in places like Chengdu, Chongqing, and Yunnan. It's a combination of government stimulus, power and water scarcity, and the triple temptation of lower taxes, smaller wages and weaker environmental standards that combine to pull China's electronics production is being drawn westward."
+    "description":"Where's the lowest-cost manufacturing? Not in Kunshan. Not any more. It's in places like Chengdu, Chongqing, and Yunnan. It's a combination of government stimulus, power and water scarcity, and the triple temptation of lower taxes, smaller wages and weaker environmental standards that combine to pull China's electronics production westward."
   };
 
   var chongqing ={
@@ -403,7 +403,7 @@ var naoshima_island = {
     "longitude":106.551681,
     "image":"",
     "read_more":ch4url,
-    "description":"Where's the lowest-cost manufacturing? Not in Kunshan. Not any more. It's in places like Chengdu, Chongqing, and Yunnan. It's a combination of government stimulus, power and water scarcity, and the triple temptation of lower taxes, smaller wages and weaker environmental standards that combine to pull China's electronics production is being drawn westward."
+    "description":"Where's the lowest-cost manufacturing? Not in Kunshan. Not any more. It's in places like Chengdu, Chongqing, and Yunnan. It's a combination of government stimulus, power and water scarcity, and the triple temptation of lower taxes, smaller wages and weaker environmental standards that combine to pull China's electronics production westward."
   };
   var abc_recycling = {
     "map_id":5,
